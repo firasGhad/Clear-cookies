@@ -1,0 +1,28 @@
+
+
+  td {
+    max-width: 200px;
+    display: table-cell;
+  }
+
+  h1 {
+    margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 12px;
+	line-height: 20px;
+	text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777;
+    text-align: center;
+}
+
+#clear_cookies {
+    transition-duration: 0.4s;
+    border: 2px solid seagreen;
+  }
+  
+#clear_cookies:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }

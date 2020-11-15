@@ -1,0 +1,19 @@
+{
+    "name": "Clear cookies",
+    "description": "Simple clear cookies extension",
+    "version": "0.1",
+    "author": "Firas",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "./src/pop_up/index.html"
+    },
+    "background": {
+        "scripts": ["src/jquery-3.4.1.min.js", "src/background.js"]
+    },
+    "content_scripts": [
+        {
+           "matches": ["<all_urls>"],
+           "js": ["src/content.js", "src/jquery-3.4.1.min.js"]
+        }
+    ]
+}
