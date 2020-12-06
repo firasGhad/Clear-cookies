@@ -40,8 +40,8 @@ function generateTable(table, data) {
         for (key in element) {
             let cell = row.insertCell();
             let text = document.createTextNode(element[key]);
-            console.log(text)
-
+        
+            cell.setAttribute('style', 'word-break: break-all')
             cell.appendChild(text);
         }
     }
